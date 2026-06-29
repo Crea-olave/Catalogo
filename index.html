@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crea Olave — Catálogo 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FADADD 0%, #F3EFF9 50%, #E8F7F2 100%);
+  font-family: 'DM Sans', sans-serif;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+}
+.card {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 28px;
+  padding: 48px 40px 40px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(58,46,40,0.12);
+  border: 1.5px solid rgba(240,200,204,0.6);
+}
+.logo {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 6px 24px rgba(201,168,76,0.25);
+  margin-bottom: 20px;
+}
+.logo-fallback {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background: #FADADD;
+  border: 3px solid #E8896A;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto 20px;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3D1C02;
+  margin-bottom: 4px;
+}
+.tagline {
+  font-size: 0.82rem;
+  color: #9B7A6A;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.sub {
+  font-size: 0.92rem;
+  color: #7A4A3A;
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+.divider {
+  width: 40px; height: 2px;
+  background: linear-gradient(90deg, #E8896A, #C8A8E9);
+  border-radius: 2px;
+  margin: 16px auto 24px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 18px 24px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  margin-bottom: 14px;
+  border: 2px solid transparent;
+}
+.btn:last-of-type { margin-bottom: 0; }
+.btn-icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+.btn-text { text-align: left; flex: 1; }
+.btn-title { display: block; font-size: 1rem; font-weight: 600; }
+.btn-desc { display: block; font-size: 0.75rem; font-weight: 400; opacity: 0.8; margin-top: 1px; }
+.btn-arrow { font-size: 1.1rem; opacity: 0.6; }
+
+.btn-web {
+  background: linear-gradient(135deg, #F3EFF9, #E8E4F4);
+  color: #3D1C02;
+  border-color: #C8A8E9;
+}
+.btn-web:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(200,168,233,0.4);
+  border-color: #9B72CF;
+}
+.btn-web .btn-icon { background: #9B72CF; }
+
+.btn-pdf {
+  background: linear-gradient(135deg, #FEF0EB, #FAE0D4);
+  color: #3D1C02;
+  border-color: #E8896A;
+}
+.btn-pdf:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(232,137,106,0.4);
+  border-color: #C8694A;
+}
+.btn-pdf .btn-icon { background: #E8896A; }
+
+.btn-wa {
+  background: linear-gradient(135deg, #E8F7F2, #D4EDE1);
+  color: #3D1C02;
+  border-color: #5BAE9A;
+}
+.btn-wa:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(91,174,154,0.4);
+  border-color: #3A8E7A;
+}
+.btn-wa .btn-icon { background: #25D366; }
+
+.footer-text {
+  margin-top: 28px;
+  font-size: 0.72rem;
+  color: #B0948A;
+  letter-spacing: 0.06em;
+}
+.sparkles {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <img src="logo.jpg" alt="Crea Olave" class="logo" onerror="this.style.display='none';document.querySelector('.logo-fallback').style.display='flex'">
+  <div class="logo-fallback" style="display:none">🎨</div>
+
+  <p class="tagline">Puerto Aysén · Patagonia</p>
+  <h1>Crea Olave</h1>
+  <div class="divider"></div>
+  <p class="sub">Figuras de yeso artesanales para pintar.<br>Elige cómo explorar nuestro catálogo 2025.</p>
+
+  <!-- Catálogo Web -->
+  <a href="indice.html" class="btn btn-web">
+    <div class="btn-icon">🌐</div>
+    <div class="btn-text">
+      <span class="btn-title">Catálogo Web</span>
+      <span class="btn-desc">Navega, filtra y arma tu pedido online</span>
+    </div>
+    <span class="btn-arrow">→</span>
+  </a>
+
+  <!-- Catálogo PDF -->
+  <a href="catalogo2025.pdf" target="_blank" class="btn btn-pdf">
+    <div class="btn-icon">📄</div>
+    <div class="btn-text">
+      <span class="btn-title">Catálogo PDF</span>
+      <span class="btn-desc">Descarga o abre el catálogo completo</span>
+    </div>
+    <span class="btn-arrow">→</span>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/56969015597" target="_blank" class="btn btn-wa">
+    <div class="btn-icon">💬</div>
+    <div class="btn-text">
+      <span class="btn-title">Escríbenos</span>
+      <span class="btn-desc">Pedidos y consultas por WhatsApp</span>
+    </div>
+    <span class="btn-arrow">→</span>
+  </a>
+
+  <p class="footer-text">✦ Hecho con amor en la Patagonia ✦</p>
+</div>
+</body>
+</html>
